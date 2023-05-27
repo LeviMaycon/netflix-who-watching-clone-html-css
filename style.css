@@ -1,0 +1,168 @@
+*{
+  letter-spacing: 0!important;
+  font-family: sans-serif;
+}
+
+body{
+  background-color: #1d1e20;
+  text-align: center;
+}
+
+.profiles-gate-container .centered-div {
+  align-items: center;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 100;
+}
+
+.list-profiles {
+  max-width: 80%;
+}
+
+.list-profiles .profile-gate-label{
+  list-style: none;
+  color: #fff;
+  font-size: 3.5vw;
+  font-weight:  unset;
+  width: 100%;
+}
+
+.list-profiles .choose-profile {
+  display: flex;
+  gap: 30px;
+  margin: 2em 0;
+}
+
+.list-profiles .choose-profile, .list-profiles .profile-gate-label {
+  opacity: 1;
+  transition: opacity .4s ease-in-out;
+}
+
+.profiles-gate-container ul{
+  padding: 0;
+}
+
+li{
+  display: list-item;
+  list-style: none;
+  text-align: -webkit-match-parent;
+}
+li:hover{
+  color: #fff;
+}
+
+
+ul {
+  list-style-type:disc;
+}
+
+a{
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.list-profiles .avatar-wrapper {
+  position: relative;
+}
+
+.profiles-gate-container .profile-icon {
+  background-color: #333;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border:none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  height: 10vw;
+  max-height: 250px;
+  max-width: 250px;
+  min-height: 84px;
+  min-width: 84px;
+  position: relative;
+  text-decoration: none;
+  width: 10vw;
+}
+
+.profiles-gate-container .profile-icon:hover{
+  border: 4px solid #fff;
+}
+
+
+.profiles-gate-container .profile-name{
+  color: grey;
+  display: block;
+  font-size: 1.3vw;
+  line-height: 1.2em;
+  margin: 0.6em 0;
+  min-height: 1.8em;
+  overflow: hidden;
+  text-align: center;
+  text-overflow: ellipsis;
+}
+
+.profiles-gate-container .addProfileIcon{
+  align-items: center;
+  color: grey;
+  display: flex;
+  font-size: 5vw;
+  height: 10vw;
+  justify-content: center;
+  max-height: 250px;
+  max-width: 250px;
+  min-height: 84px;
+  min-width: 84px;
+  text-align: center;
+  text-decoration: none;
+  width: 10vw;
+}
+
+
+.profiles-gate-container .addProfileIcon::after{
+  content: "";
+  position: absolute;
+  width:70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: grey;
+}
+
+
+.profiles-gate-container .addMais{
+  display: block;
+  font-weight: 400;
+  position: absolute;
+  color: #1d1e20;
+  z-index: 999;
+}
+
+.profile-link:hover .avatar-wrapper .profile-icon,
+.profile-link:hover .profile-name{
+  /* Estilos para o ícone do perfil e o nome do perfil quando o mouse está sobre o link de perfil */
+  /* Por exemplo, alterar a cor de fundo do ícone, a cor do texto do nome ou adicionar efeitos de animação */
+
+  color: #fff;
+}
+
+.profile-button {
+  background-color: transparent;
+  border: 1px solid grey;
+  color: grey;
+  cursor: pointer;
+  display: block;
+  font-size: 1.2vw;
+  letter-spacing: 2px;
+  margin: 2em 0 1em;
+  padding: 0.5em 1.5em;
+}
+
+.profile-button:hover{
+  border-color: #fff;
+  color: #fff;
+}
